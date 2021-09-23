@@ -11,7 +11,7 @@ int LinearSearch(vector<int>&a, int k){
         }
     }
     if(f){
-        cout<<"founded at index: " << index << endl;
+        cout<<"founded at index: " << index+1 << endl;
     }
     else cout << "not founded" << endl;
     return 0;
@@ -23,7 +23,7 @@ int main(){
     cin>>n;
     vector<int>a(n);
     cout<<"Enter elements: ";
-    for(i=1;i<=n;i++){
+    for(i=0; i<n;i++){
         cin>>a[i];
     }
     cout<<"Enter the value you want to search: ";
